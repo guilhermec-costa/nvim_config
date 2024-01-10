@@ -10,9 +10,7 @@ return packer.startup(function(use)
     use {'xiyaowong/transparent.nvim',
         config = function() vim.cmd('TransparentEnable') end
     }
-    use {'rose-pine/neovim',
-        config = function() vim.cmd('colorscheme rose-pine') end
-    }
+    use {'rose-pine/neovim'}
 
     use {'iamcco/markdown-preview.nvim',
         run = 'cd app && npm install', cmd = 'MarkdownPreview'
