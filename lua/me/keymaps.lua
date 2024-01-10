@@ -8,6 +8,9 @@ keymap('n', '<C-k>', '<C-w>k', options)
 keymap('n', '<C-j>', '<C-w>j', options)
 keymap('n', '<C-l>', '<C-w>l', options)
 keymap('n', '<C-h>', '<C-w>h', options)
+
+keymap('n', '<C-s>v', ':vsplit<CR>', options)
+keymap('n', '<C-s>h', ':split<CR>', options)
 keymap('n', 'q', ':q<Enter>', options)
 keymap('n', '<leader>pv', function() vim.cmd('Ex') end)
 
