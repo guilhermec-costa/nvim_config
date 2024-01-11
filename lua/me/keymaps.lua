@@ -1,5 +1,5 @@
 local keymap = vim.keymap.set
-local options = { noremap = true, silent = true}
+local options = { noremap = true, silent = true }
 
 vim.g.mapleader = ' '
 
@@ -26,3 +26,8 @@ keymap('v', '>', '>gv', options)
 
 keymap('v', '<A-j>', ':m .+2<CR>==gv', options)
 keymap('v', '<A-k>', ':m .-2<CR>==gv', options)
+
+keymap('n', '<leader>w', function()
+    vim.lsp.buf.format()
+    vim.cmd('w')
+end)
