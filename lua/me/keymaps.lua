@@ -1,3 +1,4 @@
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'None' })
 local keymap = vim.keymap.set
 local options = { noremap = true, silent = true }
 
@@ -9,8 +10,8 @@ keymap('n', '<C-j>', '<C-w>j', options)
 keymap('n', '<C-l>', '<C-w>l', options)
 keymap('n', '<C-h>', '<C-w>h', options)
 
-keymap('n', '<C-s>v', ':vsplit<CR>', options)
-keymap('n', '<C-s>h', ':split<CR>', options)
+keymap('n', '<C-s>l', ':vsplit<CR>', options)
+keymap('n', '<C-s>j', ':split<CR>', options)
 keymap('n', 'q', ':q<Enter>', options)
 keymap('n', '<leader>pv', function() vim.cmd('Ex') end)
 
@@ -31,3 +32,4 @@ keymap('n', '<leader>w', function()
     vim.lsp.buf.format()
     vim.cmd('w')
 end)
+

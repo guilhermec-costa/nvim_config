@@ -9,13 +9,16 @@ return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'tpope/vim-fugitive'
-    use { 'rose-pine/neovim' }
+    use 'ThePrimeagen/harpoon'
+    use 'rose-pine/neovim'
+    use 'folke/tokyonight.nvim'
 
     use { 'iamcco/markdown-preview.nvim',
         run = 'cd app && npm install', cmd = 'MarkdownPreview'
     }
 
-    use "windwp/nvim-autopairs"
+    use 'windwp/nvim-autopairs'
+    use 'windwp/nvim-ts-autotag'
 
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
@@ -47,7 +50,21 @@ return packer.startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-    use {'nvim-treesitter/nvim-treesitter',
+    use { 'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
+    }
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
+    use {'nvim-tree/nvim-web-devicons'}
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
     }
 end)
