@@ -1,8 +1,12 @@
 local lsp_status_ok, lsp_zero = pcall(require, 'lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
+    local opts = { buffer = bufnr, remap = false}
+    vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
+    vim.keymap.set('n', '<C-i>', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
     lsp_zero.default_keymaps({ buffer = bufnr })
 end)
+
 
 require('lspconfig').lua_ls.setup {
     settings = {
@@ -24,8 +28,7 @@ cmp.setup({
         -- Ctrl+Space to trigger completion menu
         ['<C-Space>'] = cmp.mapping.complete(),
 
-        -- Navigate between snippet placeholder
-        ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+        -- Navigate between snippet placeholder ['<C-f>'] = cmp_action.luasnip_jump_forward(),
         ['<C-b>'] = cmp_action.luasnip_jump_backward(),
         -- Scroll up and down in the completion documentation
         ['<C-u>'] = cmp.mapping.scroll_docs(-4),
