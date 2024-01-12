@@ -33,3 +33,5 @@ keymap('n', '<leader>w', function()
     vim.cmd('w')
 end)
 
+keymap('n', '<leader>bd', vim.cmd('bd'))
+
