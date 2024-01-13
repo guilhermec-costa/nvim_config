@@ -63,7 +63,7 @@ return packer.startup(function(use)
             { 'L3MON4D3/LuaSnip' },
         }
     }
-
+    use 'ray-x/lsp_signature.nvim'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         -- or                            , branch = '0.1.x',
