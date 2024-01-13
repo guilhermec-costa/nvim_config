@@ -30,6 +30,7 @@ return packer.startup(function(use)
     use 'ThePrimeagen/harpoon'
     use 'rose-pine/neovim'
     use 'folke/tokyonight.nvim'
+    use 'altercation/vim-colors-solarized'
 
     use { 'iamcco/markdown-preview.nvim',
         run = 'cd app && npm install', cmd = 'MarkdownPreview'
