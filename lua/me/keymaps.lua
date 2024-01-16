@@ -12,8 +12,9 @@ keymap('n', '<C-h>', '<C-w>h', options)
 
 keymap('n', '<C-s>l', ':vsplit<CR>', options)
 keymap('n', '<C-s>j', ':split<CR>', options)
-keymap('n', 'q', ':q<Enter>', options)
+keymap('n', '<leader>q', ':q<Enter>', options)
 keymap('n', '<leader>pv', function() vim.cmd('Ex') end)
+keymap('n', '<leader>c', ':nohlsearch<Enter>', options)
 
 -- window resizing
 keymap('n', '<C-Up>', ':resize -2<CR>', options)
@@ -33,4 +34,7 @@ keymap('n', '<leader>w', function()
     vim.cmd('w')
 end)
 
+-- scroll screen
+keymap('n', '<C-u>', '<C-y>', options)
+keymap('n', '<C-d>', '<C-e>', options)
 
