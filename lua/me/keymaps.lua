@@ -29,12 +29,11 @@ keymap('v', '>', '>gv', options)
 keymap('v', '<A-j>', ':m .+2<CR>==gv', options)
 keymap('v', '<A-k>', ':m .-2<CR>==gv', options)
 
-keymap('n', '<leader>w', function()
-    vim.lsp.buf.format()
-    vim.cmd('w')
-end)
+-- keymap('n', '<leader>w', function()
+--     vim.lsp.buf.format()
+--     vim.cmd('w')
+-- end)
 
 -- scroll screen
 keymap('n', '<C-u>', '<C-y>', options)
 keymap('n', '<C-d>', '<C-e>', options)
-
