@@ -37,3 +37,7 @@ keymap('v', '<A-k>', ':m .-2<CR>==gv', options)
 -- scroll screen
 keymap('n', '<C-u>', '<C-y>', options)
 keymap('n', '<C-d>', '<C-e>', options)
+
+
+-- nerdtree
+keymap('n', '<leader>o', ':NERDTreeToggle<CR>', options)
