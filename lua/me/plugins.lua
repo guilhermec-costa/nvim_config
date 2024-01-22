@@ -29,7 +29,9 @@ return packer.startup(function(use)
     use 'tpope/vim-fugitive'
     use 'ThePrimeagen/harpoon'
     use 'rose-pine/neovim'
+    use 'oxfist/night-owl.nvim'
     use 'folke/tokyonight.nvim'
+    use 'preservim/nerdtree'
 
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
