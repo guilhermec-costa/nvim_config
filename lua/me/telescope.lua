@@ -8,7 +8,7 @@ vim.keymap.set('n', '<leader>/', function()
     })
 end, { desc = '[/] Fuzzily search in current buffer' })
 
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', function() builtin.find_files({hidden=true}) end, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>sw', builtin.grep_string, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})

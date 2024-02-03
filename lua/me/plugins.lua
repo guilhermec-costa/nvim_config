@@ -28,10 +28,9 @@ return packer.startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'tpope/vim-fugitive'
     use 'ThePrimeagen/harpoon'
-    use 'Shatur/neovim-ayu'
+    use 'marko-cerovac/material.nvim'
     use 'rose-pine/neovim'
     use 'oxfist/night-owl.nvim'
-    use 'folke/tokyonight.nvim'
     use 'preservim/nerdtree'
 
     use 'windwp/nvim-autopairs'
