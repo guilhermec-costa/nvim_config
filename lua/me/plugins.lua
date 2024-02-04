@@ -31,6 +31,7 @@ return packer.startup(function(use)
     use 'marko-cerovac/material.nvim'
     use 'rose-pine/neovim'
     use 'oxfist/night-owl.nvim'
+    use 'Mofiqul/dracula.nvim'
     use 'preservim/nerdtree'
 
     use 'windwp/nvim-autopairs'
