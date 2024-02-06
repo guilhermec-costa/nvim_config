@@ -35,6 +35,7 @@ return packer.startup(function(use)
 
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
+    use 'prisma/vim-prisma'
 
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'

@@ -145,11 +145,6 @@ _G.packer_plugins = {
     path = "/home/guilherme-costa/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/home/guilherme-costa/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
-  },
   neovim = {
     loaded = true,
     path = "/home/guilherme-costa/.local/share/nvim/site/pack/packer/start/neovim",
@@ -234,6 +229,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/guilherme-costa/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight",
     url = "https://github.com/tiagofumo/vim-nerdtree-syntax-highlight"
+  },
+  ["vim-prisma"] = {
+    loaded = true,
+    path = "/home/guilherme-costa/.local/share/nvim/site/pack/packer/start/vim-prisma",
+    url = "https://github.com/prisma/vim-prisma"
   }
 }
 
